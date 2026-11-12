@@ -114,12 +114,7 @@ Best model: Random Forest
 ## Deployment
 
 - Local: `python app.py` runs the server on port 5000.
-- This is a Flask server application and cannot run on GitHub Pages. GitHub Pages only serves static files, so publishing the repository root displays `README.md` instead of starting `app.py`.
-- Recommended hosted deployment: create a new Web Service on [Render](https://render.com), connect this repository, and use the included `render.yaml` configuration. Render will install `requirements.txt` and start the app with `gunicorn app:app`.
-- Manual hosted deployment settings:
-  - Build command: `pip install -r requirements.txt`
-  - Start command: `gunicorn app:app`
-- Heroku-style: `Procfile` uses `gunicorn app:app`.
+- Heroku-style: Procfile uses `gunicorn app:app`.
 	- Note: install `gunicorn` for deployment (`pip install gunicorn`).
 
 ## Troubleshooting
